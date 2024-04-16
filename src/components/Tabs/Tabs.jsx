@@ -92,7 +92,7 @@ const tabs = [
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(1);
   return (
-    <section className="tabs">
+    <section className="tabs" id="services">
       <div className="container">
         <div className="tabs__wrapper">
           <div className="tabs__tabs">

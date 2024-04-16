@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container">
         <nav className="header__inner">
           <a href="/">Home</a>
-          <a href="/">Services</a>
+          <a href="/#services">Services</a>
           <a href="https://marine-web.vercel.app/contact" target="_blank">
             About Us
           </a>
@@ -73,14 +73,14 @@ const Header = () => {
               <a className="link" href="/">
                 Home
               </a>
-              <a className="link" href="/#touch">
+              <a className="link" href="/#services">
                 Services
               </a>
-              <a className="link" href="/#about" onClick={toggleMenu}>
+              <a className="link" href="https://marine-web.vercel.app/contact" target="_blank" onClick={toggleMenu}>
                 About Us
               </a>
             </nav>
-            <a href="/contact" className="button">
+            <a href="https://marine-web.vercel.app/contact" target="_blank" className="button">
               Contact Us
             </a>
           </div>
