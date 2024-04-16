@@ -1,0 +1,44 @@
+.touch {
+  padding-top: 16px;
+  background: #0c5acf;
+  background-image: url("../../assets/wavesTouch.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__inner {
+    display: flex;
+    padding-block: 30px;
+    justify-content: center;
+    gap: 325px;
+    align-items: flex-end;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .touch {
+    &__inner {
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .touch {
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-block: 16px 30px;
+      gap: 24px;
+    }
+  }
+}

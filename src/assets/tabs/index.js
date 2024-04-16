@@ -1,0 +1,12 @@
+export { default as tab1_1 } from "./tab1_1.svg";
+export { default as tab1_2 } from "./tab1_2.svg";
+export { default as tab1_3 } from "./tab1_3.svg";
+export { default as tab1_4 } from "./tab1_4.svg";
+export { default as tab1_5 } from "./tab1_5.svg";
+export { default as tab2_1 } from "./tab2_1.svg";
+export { default as tab2_2 } from "./tab2_2.svg";
+export { default as tab2_3 } from "./tab2_3.svg";
+export { default as tab2_4 } from "./tab2_4.svg";
+export { default as tab2_5 } from "./tab2_5.svg";
+export { default as tab2_6 } from "./tab2_6.svg";
+export { default as tab3_1 } from "./tab3_1.svg";

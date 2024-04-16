@@ -1,0 +1,233 @@
+.advantages {
+  background: #0e51b6;
+  &__inner {
+    padding-block: 50px 44px;
+    background-image: url("../../assets/scheme.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 110%;
+    h2 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+  &__grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+    & > div {
+      background: #0e51b6;
+      border: 1px solid #54a9f7;
+      border-radius: 10px;
+      padding: 14px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+        color: #fff;
+        h5 {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 26.63px;
+          text-align: center;
+        }
+        h6 {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19.36px;
+          text-align: center;
+        }
+      }
+      &:hover {
+        background: #226fe2;
+      }
+    }
+
+    .tile1 {
+      grid-area: 1 / 1 / 2 / 9;
+    }
+    .tile2 {
+      grid-area: 1 / 9 / 2 / 13;
+    }
+    .tile3 {
+      grid-area: 1 / 13 / 2 / 17;
+    }
+    .tile4 {
+      grid-area: 2 / 1 / 3 / 5;
+    }
+    .tile5 {
+      grid-area: 2 / 5 / 3 / 12;
+    }
+    .tile6 {
+      grid-area: 2 / 12 / 3 / 17;
+    }
+    .tile7 {
+      grid-area: 3 / 1 / 4 / 8;
+    }
+    .tile8 {
+      grid-area: 3 / 8 / 4 / 12;
+    }
+  }
+  &__contact {
+    margin-top: 50px;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    h2 {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24.2px;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .advantages {
+    &__grid {
+      grid-template-columns: repeat(13, 1fr);
+      .tile1 {
+        grid-area: 1 / 1 / 2 / 10;
+      }
+      .tile2 {
+        grid-area: 1 / 10 / 2 / 14;
+      }
+      .tile3 {
+        grid-area: 2 / 1 / 3 / 5;
+      }
+      .tile4 {
+        grid-area: 2 / 5 / 3 / 9;
+      }
+      .tile5 {
+        grid-area: 2 / 9 / 3 / 14;
+      }
+      .tile6 {
+        grid-area: 3 / 1 / 4 / 6;
+      }
+      .tile7 {
+        grid-area: 3 / 6 / 4 / 10;
+      }
+      .tile8 {
+        grid-area: 3 / 10 / 4 / 14;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .advantages {
+    &__grid {
+      margin-top: 32px;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      .tile1 {
+        grid-area: 1 / 1 / 2 / 6;
+      }
+      .tile2 {
+        grid-area: 1 / 6 / 2 / 11;
+      }
+      .tile3 {
+        grid-area: 2 / 1 / 3 / 5;
+      }
+      .tile4 {
+        grid-area: 2 / 5 / 3 / 11;
+      }
+      .tile5 {
+        grid-area: 3 / 1 / 4 / 6;
+      }
+      .tile6 {
+        grid-area: 3 / 6 / 4 / 11;
+      }
+      .tile7 {
+        grid-area: 4 / 1 / 5 / 4;
+      }
+      .tile8 {
+        grid-area: 4 / 4 / 5 / 8;
+      }
+    }
+    &__inner {
+      padding-top: 27px;
+    }
+    &__contact {
+      padding-left: 0;
+      margin-top: 22px;
+    }
+  }
+}
+@media screen and (max-width: 660px) {
+  .advantages {
+    padding-bottom: 0;
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, auto);
+      & > div {
+        padding: 22px 10px;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        div {
+          h5 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24.2px;
+          }
+          h6 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.2px;
+          }
+        }
+      }
+      .tile1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .tile2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .tile3 {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+      .tile4 {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .tile5 {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+      .tile6 {
+        grid-area: 4 / 1 / 5 / 3;
+      }
+      .tile7 {
+        grid-area: 5 / 1 / 6 / 2;
+      }
+      .tile8 {
+        grid-area: 5 / 2 / 6 / 3;
+      }
+    }
+    &__inner {
+      background-size: 50%;
+      background-position: 95% 95%;
+      padding-top: 37px;
+      padding-bottom: 220px;
+    }
+    &__contact {
+      margin-top: 52px;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.tabs {
+  background: #1e73f3;
+  position: relative;
+  z-index: 1;
+  &__tabs {
+    display: flex;
+    gap: 74px;
+    justify-content: center;
+    & > div {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38.73px;
+      text-align: left;
+      color: #1e73f3;
+      text-shadow: 1px 1px 0 #d3d3d3, -1px 1px 0 #d3d3d3, -1px -1px 0 #d3d3d3,
+        1px -1px 0 #d3d3d3;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #fff;
+        text-shadow: none;
+      }
+      &.active {
+        color: #fff;
+        text-shadow: none;
+      }
+    }
+  }
+  &__inner {
+    padding-block: 60px 50px;
+    & > img {
+      margin-inline: auto;
+      display: block;
+    }
+  }
+  &__labels {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      h5 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24.2px;
+        color: #fff;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18.2px;
+        color: #fff;
+      }
+    }
+  }
+}
+.wave {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  svg {
+    scale: 1.1;
+    &:nth-child(even) {
+      transform: rotateY(180deg);
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .tabs {
+    &__tabs {
+      gap: 74px;
+      & > div {
+        font-size: 24px;
+        line-height: 29.05px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .tabs {
+    &__inner {
+    
+      & > img {
+        width: 100%;
+        height: fit-content;
+      }
+    }
+    &__wrapper {
+      overflow: scroll;
+      padding-bottom: 1rem;
+    }
+    &__tabs {
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+  .wave {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    &__tabs {
+      width: 735px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .tabs {
+    &__labels {
+      display: flex;
+    }
+    &__inner{
+      padding-block: 18px 30px;
+      & > img{
+        display: none;
+      }
+    }
+  }
+}
