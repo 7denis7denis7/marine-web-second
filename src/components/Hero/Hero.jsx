@@ -14,10 +14,10 @@ const Hero = () => {
             <h1>Marine Enterprise Resource Planning</h1>
             <h2>Easy-to-manage.</h2>
           </div>
-          <button>
+          <a href="./Marine_ERP.pdf" target="_blank">
             View Presentation{" "}
             <img src={play} alt="play" width={32} height={32} />
-          </button>
+          </a>
         </div>
       </div>
       <svg
