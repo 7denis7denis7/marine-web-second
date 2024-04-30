@@ -13,14 +13,14 @@ const Footer = () => {
               <a href="https://marine-web.vercel.app/contact" target="_blank">About Us</a>
               <a href="https://marine-web.vercel.app/contact" target="_blank">Contact Us</a>
             </div>
-            <a href="/" className="termsMobile">
+            <a href="/terms" className="termsMobile">
               Terms of conditions
             </a>
           </div>
         </div>
         <div className="footer__bottom">
           <div>© 2024 Marine ERP. All Rights Reserved.</div>
-          <a href="/">Terms of conditions</a>
+          <a href="/terms">Terms of conditions</a>
         </div>
       </div>
     </footer>
